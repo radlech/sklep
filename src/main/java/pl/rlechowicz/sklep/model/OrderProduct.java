@@ -14,13 +14,13 @@ public class OrderProduct {
     @SequenceGenerator(sequenceName = "order_product_seq", name = "order_product__seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "order_product_seq")
     @Column(name = "order_product_id")
-    private Integer orderProductId;
+    private Long orderProductId;
 
     @Column(name = "order_id", nullable = false)
-    private Integer orderId;
+    private Long orderId;
 
     @Column(name = "product_id", nullable = false)
-    private Integer productId;
+    private Long productId;
 
     @Column(name = "quantity", nullable = false)
     private Integer quantity;

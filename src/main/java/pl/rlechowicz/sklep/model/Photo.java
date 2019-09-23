@@ -13,10 +13,10 @@ public class Photo {
     @SequenceGenerator(sequenceName = "photo_seq", name = "photo__seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "photo_seq")
     @Column(name = "photo_id")
-    private Integer photoId;
+    private Long photoId;
 
     @Column(name = "product_id", nullable = false)
-    private Integer productId;
+    private Long productId;
 
     @Column(name = "filename", nullable = false, unique = true)
     private String filename;

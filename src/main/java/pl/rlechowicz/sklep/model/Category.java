@@ -13,7 +13,7 @@ public class Category {
     @SequenceGenerator(sequenceName = "category_seq", name = "category__seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "category_seq")
     @Column(name = "category_id")
-    private Integer categoryId;
+    private Long categoryId;
 
     @Column(name = "name", nullable = false, unique = true)
     private String name;

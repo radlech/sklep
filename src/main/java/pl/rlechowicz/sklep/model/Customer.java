@@ -13,10 +13,10 @@ public class Customer {
     @SequenceGenerator(sequenceName = "customer_seq", name = "customer__seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "customer_seq")
     @Column(name = "customer_id")
-    private Integer customerId;
+    private Long customerId;
 
     @Column(name = "user_id", nullable = false)
-    private Integer userId;
+    private Long userId;
 
     @Column(name = "firstname", nullable = false)
     private String firstname;

@@ -7,22 +7,22 @@ import java.sql.Timestamp;
 
 @Data
 @Entity
-@Table(name = "order")
+@Table(name = "orders")
 public class Order {
 
     @Id
     @SequenceGenerator(sequenceName = "order_seq", name = "order__seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "order_seq")
     @Column(name = "order_id")
-    private Integer orderId;
+    private Long orderId;
 
     @Column(name = "customer_id", nullable = false)
-    private Integer customerId;
+    private Long customerId;
 
     @Column(name = "status", nullable = false)
     private String status;
 
-    @Column(name = "order_date", nullable = false)
+    @Column(name = "order_date")
     private Timestamp orderDate;
 
     @Column(name = "comments")

@@ -14,10 +14,10 @@ public class Product {
     @SequenceGenerator(sequenceName = "product_seq", name = "product__seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "product_seq")
     @Column(name = "product_id")
-    private Integer productId;
+    private Long productId;
 
     @Column(name = "category_id", nullable = false)
-    private Integer categoryId;
+    private Long categoryId;
 
     @Column(name = "name", nullable = false)
     private String name;

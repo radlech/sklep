@@ -13,10 +13,10 @@ public class Emloyee {
     @SequenceGenerator(sequenceName = "employee_seq", name = "employee__seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "employee_seq")
     @Column(name = "employee_id")
-    private Integer employeeId;
+    private Long employeeId;
 
     @Column(name = "user_id", nullable = false)
-    private Integer userId;
+    private Long userId;
 
     @Column(name = "firstname", nullable = false)
     private String firstname;
