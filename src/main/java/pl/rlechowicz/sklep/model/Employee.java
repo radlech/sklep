@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "employee")
-public class Emloyee {
+public class Employee {
 
     @Id
     @SequenceGenerator(sequenceName = "employee_seq", name = "employee__seq", allocationSize = 1)
