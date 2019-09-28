@@ -1,23 +1,23 @@
 insert into user values
-(nextval('user_seq'),'andrzej@wupe.pl','$2a$12$I7zE0znd2InmIZ.7bdGNou3nUkTbfbFVA4PCtqqHOnc5XUX7i1Ls.','ROLE_ADMIN',true,null),
-(nextval('user_seq'),'hubert@wupe.pl','$2a$12$I7zE0znd2InmIZ.7bdGNou3nUkTbfbFVA4PCtqqHOnc5XUX7i1Ls.','ROLE_EMPLOYEE',true,null),
-(nextval('user_seq'),'zbigniew@wupe.pl','$2a$12$I7zE0znd2InmIZ.7bdGNou3nUkTbfbFVA4PCtqqHOnc5XUX7i1Ls.','ROLE_CUSTOMER',true,null),
-(nextval('user_seq'),'jerzy@wupe.pl','$2a$12$I7zE0znd2InmIZ.7bdGNou3nUkTbfbFVA4PCtqqHOnc5XUX7i1Ls.','ROLE_CUSTOMER',true,null),
-(nextval('user_seq'),'halina@wupe.pl','$2a$12$I7zE0znd2InmIZ.7bdGNou3nUkTbfbFVA4PCtqqHOnc5XUX7i1Ls.','ROLE_CUSTOMER',true,null);
+(nextval('user_seq'),'andrzej@wupe.pl','$2a$12$y/oMnEQxmeNLVX/fir/t..xpC5UzH25wBSzSUyldKkDK5Atc5tTwy','ROLE_ADMIN',true),
+(nextval('user_seq'),'hubert@wupe.pl','$2a$12$y/oMnEQxmeNLVX/fir/t..xpC5UzH25wBSzSUyldKkDK5Atc5tTwy','ROLE_EMPLOYEE',true),
+(nextval('user_seq'),'zbigniew@wupe.pl','$2a$12$y/oMnEQxmeNLVX/fir/t..xpC5UzH25wBSzSUyldKkDK5Atc5tTwy','ROLE_CUSTOMER',true),
+(nextval('user_seq'),'jerzy@wupe.pl','$2a$12$y/oMnEQxmeNLVX/fir/t..xpC5UzH25wBSzSUyldKkDK5Atc5tTwy','ROLE_CUSTOMER',true),
+(nextval('user_seq'),'halina@wupe.pl','$2a$12$y/oMnEQxmeNLVX/fir/t..xpC5UzH25wBSzSUyldKkDK5Atc5tTwy','ROLE_CUSTOMER',true);
 
 insert into employee values
-(nextval('employee_seq'),1,'Andrzej','Adminowski','Administrator systemu'),
-(nextval('employee_seq'),2,'Hubert','Pracowity','Młodszy specjalista ds. sprzedaży');
+(1,'Andrzej','Adminowski','Administrator systemu'),
+(2,'Hubert','Pracowity','Młodszy specjalista ds. sprzedaży');
 
 insert into customer values
-(nextval('customer_seq'),3,'Zbigniew','Rozrzutny','501100900','ul. Długa 144','Nowe Miasto','98-765'),
-(nextval('customer_seq'),4,'Jerzy','Kowalski','712612512','ul. Pokątna 9A','Stara Wieś','87-654'),
-(nextval('customer_seq'),3,'Halina','Nowak','698001002','os. Fioletowe 2/19','Fioletowo Wielkie','76-789');
+(3,'Zbigniew','Rozrzutny','501100900','ul. Długa 144','Nowe Miasto','98-765'),
+(4,'Jerzy','Kowalski','712612512','ul. Pokątna 9A','Stara Wieś','87-654'),
+(5,'Halina','Nowak','698001002','os. Fioletowe 2/19','Fioletowo Wielkie','76-789');
 
 insert into category values
-(nextval('category_seq'),'Konsole','fas fa-arrow-circle-right'),
-(nextval('category_seq'),'Telewizory','fas fa-arrow-circle-right'),
-(nextval('category_seq'),'Laptopy','fas fa-arrow-circle-right');
+(nextval('category_seq'),'Konsole','fa fa-gamepad'),
+(nextval('category_seq'),'Telewizory','fa fa-tv'),
+(nextval('category_seq'),'Laptopy','fa fa-laptop');
 
 insert into product values
 (nextval('product_seq'),1,'Konsola PlayStation 4',1529.00,1199.00,'Nullam semper ipsum ut efficitur dapibus. Etiam ut finibus lectus, vel bibendum ex. Nunc fringilla, nulla eu dignissim porta, nisl elit egestas ex, in gravida elit augue vitae orci. Duis euismod enim non nunc congue, ut luctus lorem pharetra. Duis vel sodales nisl. Aenean id purus sit amet libero egestas eleifend quis nec metus. Nulla condimentum vestibulum massa nec aliquam. Sed eget vehicula ligula. Duis id nisl in diam viverra elementum. Aliquam a pulvinar metus. Etiam felis justo, vestibulum quis mi quis, finibus convallis felis. Suspendisse lectus nulla, tincidunt a quam eget, consectetur pellentesque ipsum. Fusce tempus nisl quis mi sodales, at venenatis nulla bibendum. Praesent viverra tempus justo quis tincidunt.', 8),
@@ -41,11 +41,11 @@ insert into photo values
 (nextval('photo_seq'),5,'dl5jgkfjk.jpg',1);
 
 insert into orders values
-(nextval('order_seq'),1,'zrealizowane','2019-07-29 14:01:00', null, '2019-07-29 14:04:00', 'inv-2019-01.pdf'),
-(nextval('order_seq'),1,'zrealizowane','2019-08-10 12:35:00', null, '2019-08-11 09:47:00', 'inv-2019-02.pdf'),
-(nextval('order_seq'),2,'zrealizowane','2019-08-12 21:11:00', 'Tylko dobrze zapakujcie!!!', '2019-08-12 21:24:00', 'inv-2019-03.pdf'),
-(nextval('order_seq'),1,'nieopłacone','2019-08-13 15:56:00', 'Zapłacę jutro', null, null),
-(nextval('order_seq'),1,'koszyk',null, null, null, null);
+(nextval('order_seq'),3,'zrealizowane','2019-07-29 14:01:00', null, '2019-07-29 14:04:00', 'inv-2019-01.pdf'),
+(nextval('order_seq'),3,'zrealizowane','2019-08-10 12:35:00', null, '2019-08-11 09:47:00', 'inv-2019-02.pdf'),
+(nextval('order_seq'),4,'zrealizowane','2019-08-12 21:11:00', 'Tylko dobrze zapakujcie!!!', '2019-08-12 21:24:00', 'inv-2019-03.pdf'),
+(nextval('order_seq'),3,'nieopłacone','2019-08-13 15:56:00', 'Zapłacę jutro', null, null),
+(nextval('order_seq'),3,'koszyk',null, null, null, null);
 
 insert into order_product values
 (nextval('order_product_seq'),1,5,1,6350.00),

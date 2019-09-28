@@ -1,13 +1,15 @@
 package pl.rlechowicz.sklep.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Data
+@NoArgsConstructor
 @Entity
 @Table(name = "category")
-public class Category {
+public class Category implements Comparable<Category> {
 
     @Id
     @SequenceGenerator(sequenceName = "category_seq", name = "category__seq", allocationSize = 1)
@@ -21,4 +23,8 @@ public class Category {
     @Column(name = "icon", nullable = false)
     private String icon;
 
+    @Override
+    public int compareTo(Category c) {
+        return name.compareTo(c.name);
+    }
 }

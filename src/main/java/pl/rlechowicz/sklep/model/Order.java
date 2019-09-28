@@ -1,11 +1,13 @@
 package pl.rlechowicz.sklep.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Data
+@NoArgsConstructor
 @Entity
 @Table(name = "orders")
 public class Order {

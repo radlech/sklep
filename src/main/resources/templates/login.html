@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="description" content="RL SHOP - sklep internetowy"/>
+    <meta name="author" content="Radosław Lechowicz"/>
+    <meta name="keywords" content="rl shop sklep internetowy"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <!-- Title Page -->
+    <title>RL SHOP - sklep internetowy</title>
+    <!-- CSS -->
+    <th:block th:include="include/css"/>
+</head>
+
+<body class="hold-transition login-page">
+<div class="login-box">
+    <div class="login-logo">
+        <img src="/img/logo.png" alt="RL SHOP"></img>
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+
+        <form action="" method="post" autocomplete="on">
+            <div class="form-group has-feedback">
+                <input type="email" name="email" class="form-control" placeholder="Podaj e-mail..."></input>
+                <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="password" name="password" class="form-control" placeholder="Podaj hasło..."></input>
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">Zaloguj się</button>
+                </div>
+            </div>
+        </form>
+
+        <a href="/register" class="text-center">Nie masz konta? Zarejestruj się.</a>
+
+    </div>
+    <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+
+<!-- JS -->
+<th:block th:include="include/js"/>
+
+</body>
+</html>

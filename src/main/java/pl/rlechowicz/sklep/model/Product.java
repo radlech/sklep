@@ -1,11 +1,13 @@
 package pl.rlechowicz.sklep.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Data
+@NoArgsConstructor
 @Entity
 @Table(name = "product")
 public class Product {

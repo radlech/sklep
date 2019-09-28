@@ -1,20 +1,17 @@
 package pl.rlechowicz.sklep.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Data
+@NoArgsConstructor
 @Entity
 @Table(name = "employee")
 public class Employee {
 
     @Id
-    @SequenceGenerator(sequenceName = "employee_seq", name = "employee__seq", allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "employee_seq")
-    @Column(name = "employee_id")
-    private Long employeeId;
-
     @Column(name = "user_id", nullable = false)
     private Long userId;
 
